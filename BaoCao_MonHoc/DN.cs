@@ -5,25 +5,22 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Text;
-using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace BaoCao_MonHoc
 {
-    public partial class DangNhap : Form
+    public partial class DN : Form
     {
-        public DangNhap()
+        public DN()
         {
             InitializeComponent();
         }
 
-        private void DangNhap_Load(object sender, EventArgs e)
+        private void simpleButton1_Click(object sender, EventArgs e)
         {
-            for(int i =0; i<100; i++)
-            {
-                Thread.Sleep(100);
-            }
+            DangNhap f = new DangNhap();
+            f.ShowDialog();
         }
     }
 }

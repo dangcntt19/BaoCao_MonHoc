@@ -99,6 +99,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataQLDT.dbml</DependentUpon>
     </Compile>
+    <Compile Include="DN.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DN.Designer.cs">
+      <DependentUpon>DN.cs</DependentUpon>
+    </Compile>
     <Compile Include="exClass1.cs" />
     <Compile Include="EX_kh.cs" />
     <Compile Include="Form1.cs">
@@ -171,6 +177,9 @@
     </Compile>
     <EmbeddedResource Include="DangNhap.resx">
       <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DN.resx">
+      <DependentUpon>DN.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>

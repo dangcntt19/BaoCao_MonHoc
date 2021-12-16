@@ -30,6 +30,9 @@ namespace BaoCao_MonHoc
         {
         }
 
-      
+        private void labelCopyright_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

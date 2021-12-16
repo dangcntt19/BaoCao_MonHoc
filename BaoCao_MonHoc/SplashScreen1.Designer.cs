@@ -31,8 +31,8 @@ namespace BaoCao_MonHoc
         {
             this.progressBarControl = new DevExpress.XtraEditors.MarqueeProgressBarControl();
             this.labelStatus = new DevExpress.XtraEditors.LabelControl();
-            this.peImage = new DevExpress.XtraEditors.PictureEdit();
             this.labelCopyright = new DevExpress.XtraEditors.LabelControl();
+            this.peImage = new DevExpress.XtraEditors.PictureEdit();
             ((System.ComponentModel.ISupportInitialize)(this.progressBarControl.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.peImage.Properties)).BeginInit();
             this.SuspendLayout();
@@ -55,6 +55,17 @@ namespace BaoCao_MonHoc
             this.labelStatus.TabIndex = 7;
             this.labelStatus.Text = "Starting...";
             // 
+            // labelCopyright
+            // 
+            this.labelCopyright.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
+            this.labelCopyright.Location = new System.Drawing.Point(241, 618);
+            this.labelCopyright.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.labelCopyright.Name = "labelCopyright";
+            this.labelCopyright.Size = new System.Drawing.Size(74, 19);
+            this.labelCopyright.TabIndex = 6;
+            this.labelCopyright.Text = "Copyright ";
+            this.labelCopyright.Click += new System.EventHandler(this.labelCopyright_Click);
+            // 
             // peImage
             // 
             this.peImage.EditValue = global::BaoCao_MonHoc.Properties.Resources._1632686718_478_Anh_dong_cute_dep;
@@ -69,16 +80,6 @@ namespace BaoCao_MonHoc
             this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
             this.peImage.Size = new System.Drawing.Size(520, 468);
             this.peImage.TabIndex = 9;
-            // 
-            // labelCopyright
-            // 
-            this.labelCopyright.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelCopyright.Location = new System.Drawing.Point(241, 618);
-            this.labelCopyright.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.labelCopyright.Name = "labelCopyright";
-            this.labelCopyright.Size = new System.Drawing.Size(74, 19);
-            this.labelCopyright.TabIndex = 6;
-            this.labelCopyright.Text = "Copyright ";
             // 
             // SplashScreen1
             // 
