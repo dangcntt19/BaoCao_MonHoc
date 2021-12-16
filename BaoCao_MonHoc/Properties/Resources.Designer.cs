@@ -63,6 +63,16 @@ namespace BaoCao_MonHoc.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1632686718_478_Anh_dong_cute_dep {
+            get {
+                object obj = ResourceManager.GetObject("1632686718_478_Anh-dong-cute-dep", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _6bb880ce261239a99ba90fc14fe271b4 {
             get {
                 object obj = ResourceManager.GetObject("6bb880ce261239a99ba90fc14fe271b4", resourceCulture);

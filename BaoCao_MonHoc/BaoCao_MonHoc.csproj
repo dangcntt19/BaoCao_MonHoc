@@ -88,6 +88,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DangNhap.Designer.cs">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="DataQLDT.designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
@@ -150,6 +156,12 @@
     <Compile Include="Rp_NV.Designer.cs">
       <DependentUpon>Rp_NV.cs</DependentUpon>
     </Compile>
+    <Compile Include="SplashScreen1.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="SplashScreen1.Designer.cs">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
+    </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="XuatEX.cs">
       <SubType>Form</SubType>
@@ -157,6 +169,9 @@
     <Compile Include="XuatEX.Designer.cs">
       <DependentUpon>XuatEX.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="DangNhap.resx">
+      <DependentUpon>DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -193,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Rp_NV.resx">
       <DependentUpon>Rp_NV.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="SplashScreen1.resx">
+      <DependentUpon>SplashScreen1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XuatEX.resx">
       <DependentUpon>XuatEX.cs</DependentUpon>
@@ -243,6 +261,7 @@
     <None Include="Resources\Apps-session-logout-icon.png" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\1632686718_478_Anh-dong-cute-dep.gif" />
     <Content Include="SqlServerTypes\readme.htm" />
     <Content Include="SqlServerTypes\x64\msvcr120.dll">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
