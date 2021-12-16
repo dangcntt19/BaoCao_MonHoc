@@ -76,12 +76,6 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>DataQLDT.dbml</DependentUpon>
     </Compile>
-    <Compile Include="dienthoai.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="dienthoai.Designer.cs">
-      <DependentUpon>dienthoai.cs</DependentUpon>
-    </Compile>
     <Compile Include="exClass1.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -109,9 +103,6 @@
     <Compile Include="Quanli.Designer.cs">
       <DependentUpon>Quanli.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="dienthoai.resx">
-      <DependentUpon>dienthoai.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
