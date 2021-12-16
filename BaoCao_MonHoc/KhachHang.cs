@@ -214,5 +214,12 @@ namespace BaoCao_MonHoc
 
 
         }
+
+        private void simpleButton4_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+            XuatEX f = new XuatEX();
+            f.Show();
+        }
     }
 }

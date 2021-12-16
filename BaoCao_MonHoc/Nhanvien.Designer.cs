@@ -73,14 +73,6 @@ namespace BaoCao_MonHoc
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
-            this.ID = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ten = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Gt = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.qq = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.Ngaysinh = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.ngayvl = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.cccd = new DevExpress.XtraGrid.Columns.GridColumn();
-            this.bangcap = new DevExpress.XtraGrid.Columns.GridColumn();
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.barManager1)).BeginInit();
@@ -525,100 +517,11 @@ namespace BaoCao_MonHoc
             // 
             // gridView1
             // 
-            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
-            this.ID,
-            this.ten,
-            this.Gt,
-            this.qq,
-            this.Ngaysinh,
-            this.ngayvl,
-            this.cccd,
-            this.bangcap});
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.OptionsBehavior.Editable = false;
             this.gridView1.OptionsSelection.MultiSelectMode = DevExpress.XtraGrid.Views.Grid.GridMultiSelectMode.CellSelect;
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
-            // 
-            // ID
-            // 
-            this.ID.Caption = "Mã nhân viên";
-            this.ID.FieldName = "manv";
-            this.ID.MinWidth = 30;
-            this.ID.Name = "ID";
-            this.ID.Visible = true;
-            this.ID.VisibleIndex = 0;
-            this.ID.Width = 112;
-            // 
-            // ten
-            // 
-            this.ten.Caption = "Họ tên nhân viên";
-            this.ten.FieldName = "hotennv";
-            this.ten.MinWidth = 30;
-            this.ten.Name = "ten";
-            this.ten.Visible = true;
-            this.ten.VisibleIndex = 1;
-            this.ten.Width = 112;
-            // 
-            // Gt
-            // 
-            this.Gt.Caption = "Giới tính";
-            this.Gt.FieldName = "gioitinh";
-            this.Gt.MinWidth = 30;
-            this.Gt.Name = "Gt";
-            this.Gt.Visible = true;
-            this.Gt.VisibleIndex = 2;
-            this.Gt.Width = 112;
-            // 
-            // qq
-            // 
-            this.qq.Caption = "Quê quán";
-            this.qq.FieldName = "quequan";
-            this.qq.MinWidth = 30;
-            this.qq.Name = "qq";
-            this.qq.Visible = true;
-            this.qq.VisibleIndex = 3;
-            this.qq.Width = 112;
-            // 
-            // Ngaysinh
-            // 
-            this.Ngaysinh.Caption = "Ngày sinh";
-            this.Ngaysinh.FieldName = "ngaysinh";
-            this.Ngaysinh.MinWidth = 30;
-            this.Ngaysinh.Name = "Ngaysinh";
-            this.Ngaysinh.Visible = true;
-            this.Ngaysinh.VisibleIndex = 4;
-            this.Ngaysinh.Width = 112;
-            // 
-            // ngayvl
-            // 
-            this.ngayvl.Caption = "Ngày vào làm";
-            this.ngayvl.FieldName = "ngayvaolam";
-            this.ngayvl.MinWidth = 30;
-            this.ngayvl.Name = "ngayvl";
-            this.ngayvl.Visible = true;
-            this.ngayvl.VisibleIndex = 5;
-            this.ngayvl.Width = 112;
-            // 
-            // cccd
-            // 
-            this.cccd.Caption = "CCCD/CMND";
-            this.cccd.FieldName = "cccd";
-            this.cccd.MinWidth = 30;
-            this.cccd.Name = "cccd";
-            this.cccd.Visible = true;
-            this.cccd.VisibleIndex = 6;
-            this.cccd.Width = 112;
-            // 
-            // bangcap
-            // 
-            this.bangcap.Caption = "Mã bằng cấp";
-            this.bangcap.FieldName = "mabc";
-            this.bangcap.MinWidth = 30;
-            this.bangcap.Name = "bangcap";
-            this.bangcap.Visible = true;
-            this.bangcap.VisibleIndex = 7;
-            this.bangcap.Width = 112;
             // 
             // searchControl1
             // 
@@ -742,14 +645,6 @@ namespace BaoCao_MonHoc
         private DevExpress.XtraEditors.SimpleButton simpleButton1;
         private DevExpress.XtraGrid.GridControl gridControl1;
         private DevExpress.XtraGrid.Views.Grid.GridView gridView1;
-        private DevExpress.XtraGrid.Columns.GridColumn ID;
-        private DevExpress.XtraGrid.Columns.GridColumn ten;
-        private DevExpress.XtraGrid.Columns.GridColumn Gt;
-        private DevExpress.XtraGrid.Columns.GridColumn qq;
-        private DevExpress.XtraGrid.Columns.GridColumn Ngaysinh;
-        private DevExpress.XtraGrid.Columns.GridColumn ngayvl;
-        private DevExpress.XtraGrid.Columns.GridColumn cccd;
-        private DevExpress.XtraGrid.Columns.GridColumn bangcap;
         private DevExpress.XtraEditors.TextEdit textEdit1;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem1;
         private DevExpress.XtraEditors.SearchControl searchControl1;
