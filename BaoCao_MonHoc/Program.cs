@@ -16,7 +16,7 @@ namespace BaoCao_MonHoc
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Rp_KH());
+            Application.Run(new Quanli());
         }
     }
 }

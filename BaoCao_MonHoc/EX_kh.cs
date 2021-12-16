@@ -130,6 +130,7 @@ namespace BaoCao_MonHoc
                 {
                     arr[r, c] = dr[c];
                 }
+       
             }
 
             //Thiết lập vùng điền dữ liệu

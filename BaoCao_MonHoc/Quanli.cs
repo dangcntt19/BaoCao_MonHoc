@@ -51,7 +51,7 @@ namespace BaoCao_MonHoc
 
         private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = this.KiemTraForm(typeof(Nhanvien));
+            Form frm = this.KiemTraForm(typeof(KhachHang));
             if (frm != null)
             {
                 frm.Activate();
@@ -63,6 +63,27 @@ namespace BaoCao_MonHoc
                 f.Show();
             }
 
+        }
+
+        private void barButtonItem16_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            RB_chung f = new RB_chung();
+            f.ShowDialog();
+        }
+
+        private void barButtonItem17_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            Form frm = this.KiemTraForm(typeof(XuatEX));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                XuatEX f = new XuatEX();
+                f.MdiParent = this;
+                f.Show();
+            }
         }
     }
 }

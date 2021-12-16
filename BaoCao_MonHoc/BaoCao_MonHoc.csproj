@@ -132,11 +132,23 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QuanLy_DienThoaiDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="RB_chung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RB_chung.Designer.cs">
+      <DependentUpon>RB_chung.cs</DependentUpon>
+    </Compile>
     <Compile Include="Rp_KH.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Rp_KH.Designer.cs">
       <DependentUpon>Rp_KH.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Rp_NV.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Rp_NV.Designer.cs">
+      <DependentUpon>Rp_NV.cs</DependentUpon>
     </Compile>
     <Compile Include="SqlServerTypes\Loader.cs" />
     <Compile Include="XuatEX.cs">
@@ -171,10 +183,16 @@
     <EmbeddedResource Include="Quanli.resx">
       <DependentUpon>Quanli.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="RB_chung.resx">
+      <DependentUpon>RB_chung.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Report1.rdlc" />
     <EmbeddedResource Include="Report2.rdlc" />
     <EmbeddedResource Include="Rp_KH.resx">
       <DependentUpon>Rp_KH.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Rp_NV.resx">
+      <DependentUpon>Rp_NV.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="XuatEX.resx">
       <DependentUpon>XuatEX.cs</DependentUpon>

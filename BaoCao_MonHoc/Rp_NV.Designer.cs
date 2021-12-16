@@ -1,7 +1,7 @@
 ﻿
 namespace BaoCao_MonHoc
 {
-    partial class Rp_KH
+    partial class Rp_NV
     {
         /// <summary>
         /// Required designer variable.
@@ -30,19 +30,19 @@ namespace BaoCao_MonHoc
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource1 = new Microsoft.Reporting.WinForms.ReportDataSource();
-            this.khachhangBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            Microsoft.Reporting.WinForms.ReportDataSource reportDataSource2 = new Microsoft.Reporting.WinForms.ReportDataSource();
+            this.nhanvienBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.QuanLy_DienThoaiDataSet = new BaoCao_MonHoc.QuanLy_DienThoaiDataSet();
             this.reportViewer1 = new Microsoft.Reporting.WinForms.ReportViewer();
-            this.khachhangTableAdapter = new BaoCao_MonHoc.QuanLy_DienThoaiDataSetTableAdapters.khachhangTableAdapter();
-            ((System.ComponentModel.ISupportInitialize)(this.khachhangBindingSource)).BeginInit();
+            this.nhanvienTableAdapter = new BaoCao_MonHoc.QuanLy_DienThoaiDataSetTableAdapters.nhanvienTableAdapter();
+            ((System.ComponentModel.ISupportInitialize)(this.nhanvienBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuanLy_DienThoaiDataSet)).BeginInit();
             this.SuspendLayout();
             // 
-            // khachhangBindingSource
+            // nhanvienBindingSource
             // 
-            this.khachhangBindingSource.DataMember = "khachhang";
-            this.khachhangBindingSource.DataSource = this.QuanLy_DienThoaiDataSet;
+            this.nhanvienBindingSource.DataMember = "nhanvien";
+            this.nhanvienBindingSource.DataSource = this.QuanLy_DienThoaiDataSet;
             // 
             // QuanLy_DienThoaiDataSet
             // 
@@ -52,30 +52,30 @@ namespace BaoCao_MonHoc
             // reportViewer1
             // 
             this.reportViewer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            reportDataSource1.Name = "DataSet1";
-            reportDataSource1.Value = this.khachhangBindingSource;
-            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource1);
-            this.reportViewer1.LocalReport.ReportEmbeddedResource = "BaoCao_MonHoc.Report1.rdlc";
+            reportDataSource2.Name = "DataSet1";
+            reportDataSource2.Value = this.nhanvienBindingSource;
+            this.reportViewer1.LocalReport.DataSources.Add(reportDataSource2);
+            this.reportViewer1.LocalReport.ReportEmbeddedResource = "BaoCao_MonHoc.Report2.rdlc";
             this.reportViewer1.Location = new System.Drawing.Point(0, 0);
             this.reportViewer1.Name = "reportViewer1";
             this.reportViewer1.ServerReport.BearerToken = null;
-            this.reportViewer1.Size = new System.Drawing.Size(1013, 533);
+            this.reportViewer1.Size = new System.Drawing.Size(1066, 556);
             this.reportViewer1.TabIndex = 0;
             // 
-            // khachhangTableAdapter
+            // nhanvienTableAdapter
             // 
-            this.khachhangTableAdapter.ClearBeforeFill = true;
+            this.nhanvienTableAdapter.ClearBeforeFill = true;
             // 
-            // Rp_KH
+            // Rp_NV
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1013, 533);
+            this.ClientSize = new System.Drawing.Size(1066, 556);
             this.Controls.Add(this.reportViewer1);
-            this.Name = "Rp_KH";
-            this.Text = "Rp_KH";
-            this.Load += new System.EventHandler(this.Rp_KH_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.khachhangBindingSource)).EndInit();
+            this.Name = "Rp_NV";
+            this.Text = "Rp_NV";
+            this.Load += new System.EventHandler(this.Rp_NV_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.nhanvienBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.QuanLy_DienThoaiDataSet)).EndInit();
             this.ResumeLayout(false);
 
@@ -84,8 +84,8 @@ namespace BaoCao_MonHoc
         #endregion
 
         private Microsoft.Reporting.WinForms.ReportViewer reportViewer1;
-        private System.Windows.Forms.BindingSource khachhangBindingSource;
+        private System.Windows.Forms.BindingSource nhanvienBindingSource;
         private QuanLy_DienThoaiDataSet QuanLy_DienThoaiDataSet;
-        private QuanLy_DienThoaiDataSetTableAdapters.khachhangTableAdapter khachhangTableAdapter;
+        private QuanLy_DienThoaiDataSetTableAdapters.nhanvienTableAdapter nhanvienTableAdapter;
     }
 }

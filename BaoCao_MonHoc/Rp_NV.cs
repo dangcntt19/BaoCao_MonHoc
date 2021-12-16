@@ -10,20 +10,22 @@ using System.Windows.Forms;
 
 namespace BaoCao_MonHoc
 {
-    public partial class Rp_KH : Form
+    public partial class Rp_NV : Form
     {
-        public Rp_KH()
+        public Rp_NV()
         {
             InitializeComponent();
         }
 
-        private void Rp_KH_Load(object sender, EventArgs e)
+        private void Rp_NV_Load(object sender, EventArgs e)
         {
-            // TODO: This line of code loads data into the 'QuanLy_DienThoaiDataSet.khachhang' table. You can move, or remove it, as needed.
-            this.khachhangTableAdapter.Fill(this.QuanLy_DienThoaiDataSet.khachhang);
+            // TODO: This line of code loads data into the 'QuanLy_DienThoaiDataSet.nhanvien' table. You can move, or remove it, as needed.
+            this.nhanvienTableAdapter.Fill(this.QuanLy_DienThoaiDataSet.nhanvien);
 
             this.reportViewer1.RefreshReport();
         }
+
+       
 
        
     }
