@@ -45,14 +45,24 @@ namespace BaoCao_MonHoc
             }
         }
 
-        private void barButtonItem9_ItemClick(object sender, ItemClickEventArgs e)
-        {
-           
-        }
+      
 
-        private void barButtonItem15_ItemClick(object sender, ItemClickEventArgs e)
+       
+
+        private void barButtonItem10_ItemClick(object sender, ItemClickEventArgs e)
         {
-            
+            Form frm = this.KiemTraForm(typeof(Nhanvien));
+            if (frm != null)
+            {
+                frm.Activate();
+            }
+            else
+            {
+                KhachHang f = new KhachHang();
+                f.MdiParent = this;
+                f.Show();
+            }
+
         }
     }
 }

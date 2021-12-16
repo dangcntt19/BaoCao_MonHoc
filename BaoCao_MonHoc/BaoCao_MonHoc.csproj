@@ -110,6 +110,12 @@
     <Compile Include="Quanli.Designer.cs">
       <DependentUpon>Quanli.cs</DependentUpon>
     </Compile>
+    <Compile Include="XuatEX.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="XuatEX.Designer.cs">
+      <DependentUpon>XuatEX.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
@@ -135,6 +141,9 @@
     </Compile>
     <EmbeddedResource Include="Quanli.resx">
       <DependentUpon>Quanli.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="XuatEX.resx">
+      <DependentUpon>XuatEX.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="DataQLDT.dbml">
       <Generator>MSLinqToSQLGenerator</Generator>

@@ -64,9 +64,9 @@ namespace BaoCao_MonHoc
 
         private void simpleButton2_Click(object sender, EventArgs e)
         {
-            DialogResult kq = MessageBox.Show("BẠN MUỐN THOÁT RA?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            if (kq == DialogResult.OK)
-                Close();
+            this.Hide();
+            XuatEX f = new XuatEX();
+            f.Show();
         }
     }
 }
