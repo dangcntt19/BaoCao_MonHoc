@@ -47,17 +47,12 @@ namespace BaoCao_MonHoc
 
         private void barButtonItem9_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = this.KiemTraForm(typeof(DienThoai));
-            if (frm != null)
-            {
-                frm.Activate();
-            }
-            else
-            {
-                DienThoai f1 = new DienThoai();
-                f1.MdiParent = this;
-                f1.Show();
-            }
+           
+        }
+
+        private void barButtonItem15_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            
         }
     }
 }
