@@ -85,5 +85,12 @@ namespace BaoCao_MonHoc
                 f.Show();
             }
         }
+
+        private void btndangxuat_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            DangNhap r = new DangNhap();
+            r.ShowDialog();
+            this.Hide();
+        }
     }
 }

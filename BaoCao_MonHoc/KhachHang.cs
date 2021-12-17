@@ -15,6 +15,7 @@ namespace BaoCao_MonHoc
         public KhachHang()
         {
             InitializeComponent();
+            CenterToScreen();
             loadData();
             combo1();
         }
@@ -215,11 +216,14 @@ namespace BaoCao_MonHoc
 
         }
 
-        private void simpleButton4_Click(object sender, EventArgs e)
+        private void simpleButton5_Click(object sender, EventArgs e)
         {
+
             this.Hide();
             XuatEX f = new XuatEX();
             f.Show();
         }
+
+     
     }
 }

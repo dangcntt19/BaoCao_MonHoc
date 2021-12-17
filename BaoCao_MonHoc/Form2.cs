@@ -47,12 +47,7 @@ namespace BaoCao_MonHoc
             conn.Close();
         }
 
-        private void simpleButton2_Click(object sender, EventArgs e)
-        {
-            DialogResult kq = MessageBox.Show("BẠN MUỐN THOÁT RA?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
-            if (kq == DialogResult.OK)
-                Close();
-        }
+        
 
         private void Form2_Load(object sender, EventArgs e)
         {
@@ -65,6 +60,13 @@ namespace BaoCao_MonHoc
             DataSet datasp = new DataSet(" kh");
             SqlDataAdapter adapsp = new SqlDataAdapter(strsp, conn);
             adapsp.Fill(datasp, "kh");
+        }
+
+        private void simpleButton3_Click(object sender, EventArgs e)
+        {
+            DialogResult kq = MessageBox.Show("BẠN MUỐN THOÁT RA?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (kq == DialogResult.OK)
+                Close();
         }
     }
 }

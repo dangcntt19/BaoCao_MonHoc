@@ -33,6 +33,13 @@ namespace BaoCao_MonHoc
             this.pictureEdit1 = new DevExpress.XtraEditors.PictureEdit();
             this.gridControl1 = new DevExpress.XtraGrid.GridControl();
             this.gridView1 = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColumn1 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn2 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn3 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn4 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn5 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn6 = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColumn7 = new DevExpress.XtraGrid.Columns.GridColumn();
             this.layoutControl1 = new DevExpress.XtraLayout.LayoutControl();
             this.textEdit7 = new DevExpress.XtraEditors.TextEdit();
             this.textEdit6 = new DevExpress.XtraEditors.TextEdit();
@@ -59,6 +66,7 @@ namespace BaoCao_MonHoc
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
             this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
+            this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridControl1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gridView1)).BeginInit();
@@ -92,28 +100,111 @@ namespace BaoCao_MonHoc
             // pictureEdit1
             // 
             this.pictureEdit1.EditValue = global::BaoCao_MonHoc.Properties.Resources.logo;
-            this.pictureEdit1.Location = new System.Drawing.Point(5, 3);
+            this.pictureEdit1.Location = new System.Drawing.Point(8, 4);
+            this.pictureEdit1.Margin = new System.Windows.Forms.Padding(4);
             this.pictureEdit1.Name = "pictureEdit1";
             this.pictureEdit1.Properties.ShowCameraMenuItem = DevExpress.XtraEditors.Controls.CameraMenuItemVisibility.Auto;
-            this.pictureEdit1.Size = new System.Drawing.Size(330, 249);
+            this.pictureEdit1.Size = new System.Drawing.Size(446, 300);
             this.pictureEdit1.TabIndex = 0;
             // 
             // gridControl1
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
-            this.gridControl1.Location = new System.Drawing.Point(0, 455);
+            this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
+            this.gridControl1.Location = new System.Drawing.Point(0, 465);
             this.gridControl1.MainView = this.gridView1;
+            this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1091, 210);
+            this.gridControl1.Size = new System.Drawing.Size(1113, 315);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
             // 
             // gridView1
             // 
+            this.gridView1.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColumn1,
+            this.gridColumn2,
+            this.gridColumn3,
+            this.gridColumn4,
+            this.gridColumn5,
+            this.gridColumn6,
+            this.gridColumn7});
+            this.gridView1.DetailHeight = 525;
+            this.gridView1.FixedLineWidth = 3;
             this.gridView1.GridControl = this.gridControl1;
             this.gridView1.Name = "gridView1";
             this.gridView1.RowCellClick += new DevExpress.XtraGrid.Views.Grid.RowCellClickEventHandler(this.gridView1_RowCellClick);
+            // 
+            // gridColumn1
+            // 
+            this.gridColumn1.Caption = "Mã khách hàng";
+            this.gridColumn1.FieldName = "makh";
+            this.gridColumn1.MinWidth = 30;
+            this.gridColumn1.Name = "gridColumn1";
+            this.gridColumn1.Visible = true;
+            this.gridColumn1.VisibleIndex = 0;
+            this.gridColumn1.Width = 112;
+            // 
+            // gridColumn2
+            // 
+            this.gridColumn2.Caption = "Tên khách hàng";
+            this.gridColumn2.FieldName = "hoten";
+            this.gridColumn2.MinWidth = 30;
+            this.gridColumn2.Name = "gridColumn2";
+            this.gridColumn2.Visible = true;
+            this.gridColumn2.VisibleIndex = 1;
+            this.gridColumn2.Width = 112;
+            // 
+            // gridColumn3
+            // 
+            this.gridColumn3.Caption = "Giới tính";
+            this.gridColumn3.FieldName = "gioitinh";
+            this.gridColumn3.MinWidth = 30;
+            this.gridColumn3.Name = "gridColumn3";
+            this.gridColumn3.Visible = true;
+            this.gridColumn3.VisibleIndex = 2;
+            this.gridColumn3.Width = 112;
+            // 
+            // gridColumn4
+            // 
+            this.gridColumn4.Caption = "Ngày sinh";
+            this.gridColumn4.FieldName = "ngaysinh";
+            this.gridColumn4.MinWidth = 30;
+            this.gridColumn4.Name = "gridColumn4";
+            this.gridColumn4.Visible = true;
+            this.gridColumn4.VisibleIndex = 3;
+            this.gridColumn4.Width = 112;
+            // 
+            // gridColumn5
+            // 
+            this.gridColumn5.Caption = "Địa chỉ";
+            this.gridColumn5.FieldName = "diachi";
+            this.gridColumn5.MinWidth = 30;
+            this.gridColumn5.Name = "gridColumn5";
+            this.gridColumn5.Visible = true;
+            this.gridColumn5.VisibleIndex = 4;
+            this.gridColumn5.Width = 112;
+            // 
+            // gridColumn6
+            // 
+            this.gridColumn6.Caption = "Số điện thoại";
+            this.gridColumn6.FieldName = "sodt";
+            this.gridColumn6.MinWidth = 30;
+            this.gridColumn6.Name = "gridColumn6";
+            this.gridColumn6.Visible = true;
+            this.gridColumn6.VisibleIndex = 5;
+            this.gridColumn6.Width = 112;
+            // 
+            // gridColumn7
+            // 
+            this.gridColumn7.Caption = "CMND/CCCD";
+            this.gridColumn7.FieldName = "cccd";
+            this.gridColumn7.MinWidth = 30;
+            this.gridColumn7.Name = "gridColumn7";
+            this.gridColumn7.Visible = true;
+            this.gridColumn7.VisibleIndex = 6;
+            this.gridColumn7.Width = 112;
             // 
             // layoutControl1
             // 
@@ -127,7 +218,7 @@ namespace BaoCao_MonHoc
             this.layoutControl1.Controls.Add(this.textEdit3);
             this.layoutControl1.Controls.Add(this.dateEdit1);
             this.layoutControl1.Controls.Add(this.textEdit1);
-            this.layoutControl1.Location = new System.Drawing.Point(365, 3);
+            this.layoutControl1.Location = new System.Drawing.Point(461, 12);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.Root = this.Root;
             this.layoutControl1.Size = new System.Drawing.Size(639, 237);
@@ -326,9 +417,10 @@ namespace BaoCao_MonHoc
             // simpleButton1
             // 
             this.simpleButton1.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton1.ImageOptions.Image")));
-            this.simpleButton1.Location = new System.Drawing.Point(514, 273);
+            this.simpleButton1.Location = new System.Drawing.Point(630, 256);
+            this.simpleButton1.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton1.Name = "simpleButton1";
-            this.simpleButton1.Size = new System.Drawing.Size(113, 54);
+            this.simpleButton1.Size = new System.Drawing.Size(124, 48);
             this.simpleButton1.TabIndex = 3;
             this.simpleButton1.Text = "Sửa";
             this.simpleButton1.Click += new System.EventHandler(this.simpleButton1_Click);
@@ -336,9 +428,10 @@ namespace BaoCao_MonHoc
             // simpleButton2
             // 
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
-            this.simpleButton2.Location = new System.Drawing.Point(697, 274);
+            this.simpleButton2.Location = new System.Drawing.Point(784, 256);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton2.Name = "simpleButton2";
-            this.simpleButton2.Size = new System.Drawing.Size(109, 53);
+            this.simpleButton2.Size = new System.Drawing.Size(122, 48);
             this.simpleButton2.TabIndex = 4;
             this.simpleButton2.Text = "Xoá";
             this.simpleButton2.Click += new System.EventHandler(this.simpleButton2_Click);
@@ -346,9 +439,10 @@ namespace BaoCao_MonHoc
             // simpleButton3
             // 
             this.simpleButton3.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton3.ImageOptions.Image")));
-            this.simpleButton3.Location = new System.Drawing.Point(365, 273);
+            this.simpleButton3.Location = new System.Drawing.Point(482, 256);
+            this.simpleButton3.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton3.Name = "simpleButton3";
-            this.simpleButton3.Size = new System.Drawing.Size(108, 54);
+            this.simpleButton3.Size = new System.Drawing.Size(116, 48);
             this.simpleButton3.TabIndex = 5;
             this.simpleButton3.Text = "Thêm";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
@@ -356,7 +450,8 @@ namespace BaoCao_MonHoc
             // searchControl1
             // 
             this.searchControl1.Client = this.gridControl1;
-            this.searchControl1.Location = new System.Drawing.Point(647, 455);
+            this.searchControl1.Location = new System.Drawing.Point(694, 393);
+            this.searchControl1.Margin = new System.Windows.Forms.Padding(4);
             this.searchControl1.Name = "searchControl1";
             this.searchControl1.Properties.AutoHeight = false;
             this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
@@ -364,24 +459,35 @@ namespace BaoCao_MonHoc
             new DevExpress.XtraEditors.Repository.SearchButton()});
             this.searchControl1.Properties.Client = this.gridControl1;
             this.searchControl1.Properties.ShowDefaultButtonsMode = DevExpress.XtraEditors.Repository.ShowDefaultButtonsMode.AutoShowClear;
-            this.searchControl1.Size = new System.Drawing.Size(443, 31);
+            this.searchControl1.Size = new System.Drawing.Size(419, 49);
             this.searchControl1.TabIndex = 7;
             // 
             // simpleButton4
             // 
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
-            this.simpleButton4.Location = new System.Drawing.Point(866, 276);
+            this.simpleButton4.Location = new System.Drawing.Point(1299, 414);
+            this.simpleButton4.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton4.Name = "simpleButton4";
-            this.simpleButton4.Size = new System.Drawing.Size(137, 51);
+            this.simpleButton4.Size = new System.Drawing.Size(206, 76);
             this.simpleButton4.TabIndex = 8;
             this.simpleButton4.Text = "Xuất Excel";
-            this.simpleButton4.Click += new System.EventHandler(this.simpleButton4_Click);
+            // 
+            // simpleButton5
+            // 
+            this.simpleButton5.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton5.ImageOptions.Image")));
+            this.simpleButton5.Location = new System.Drawing.Point(931, 255);
+            this.simpleButton5.Name = "simpleButton5";
+            this.simpleButton5.Size = new System.Drawing.Size(115, 49);
+            this.simpleButton5.TabIndex = 10;
+            this.simpleButton5.Text = "Excel";
+            this.simpleButton5.Click += new System.EventHandler(this.simpleButton5_Click);
             // 
             // KhachHang
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1091, 665);
+            this.ClientSize = new System.Drawing.Size(1113, 780);
+            this.Controls.Add(this.simpleButton5);
             this.Controls.Add(this.simpleButton4);
             this.Controls.Add(this.searchControl1);
             this.Controls.Add(this.simpleButton3);
@@ -455,5 +561,13 @@ namespace BaoCao_MonHoc
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
         private DevExpress.XtraEditors.SearchControl searchControl1;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
+        private DevExpress.XtraEditors.SimpleButton simpleButton5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn2;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn3;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn4;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn5;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn6;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColumn7;
     }
 }

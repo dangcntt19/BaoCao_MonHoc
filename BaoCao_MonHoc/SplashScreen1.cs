@@ -14,7 +14,7 @@ namespace BaoCao_MonHoc
         public SplashScreen1()
         {
             InitializeComponent();
-            this.labelCopyright.Text = "Copyright © Đăng Nguyễn";
+            this.labelCopyright.Text = "Copyright © Đăng Nguyễn" + DateTime.Now.Year.ToString();
         }
 
         #region Overrides
@@ -30,7 +30,7 @@ namespace BaoCao_MonHoc
         {
         }
 
-        private void labelCopyright_Click(object sender, EventArgs e)
+        private void SplashScreen1_Load(object sender, EventArgs e)
         {
 
         }

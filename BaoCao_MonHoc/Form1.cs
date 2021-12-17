@@ -66,7 +66,7 @@ namespace BaoCao_MonHoc
         {
             this.Hide();
             XuatEX f = new XuatEX();
-            f.Show();
+            f.ShowDialog();
         }
     }
 }
