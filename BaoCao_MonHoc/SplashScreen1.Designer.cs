@@ -40,8 +40,8 @@ namespace BaoCao_MonHoc
             // progressBarControl
             // 
             this.progressBarControl.EditValue = 0;
-            this.progressBarControl.Location = new System.Drawing.Point(34, 346);
-            this.progressBarControl.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.progressBarControl.Location = new System.Drawing.Point(211, 393);
+            this.progressBarControl.Margin = new System.Windows.Forms.Padding(4);
             this.progressBarControl.Name = "progressBarControl";
             this.progressBarControl.Size = new System.Drawing.Size(606, 18);
             this.progressBarControl.TabIndex = 5;
@@ -49,8 +49,8 @@ namespace BaoCao_MonHoc
             // labelCopyright
             // 
             this.labelCopyright.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelCopyright.Location = new System.Drawing.Point(289, 430);
-            this.labelCopyright.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelCopyright.Location = new System.Drawing.Point(414, 491);
+            this.labelCopyright.Margin = new System.Windows.Forms.Padding(6);
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(69, 19);
             this.labelCopyright.TabIndex = 6;
@@ -58,8 +58,8 @@ namespace BaoCao_MonHoc
             // 
             // labelStatus
             // 
-            this.labelStatus.Location = new System.Drawing.Point(34, 309);
-            this.labelStatus.Margin = new System.Windows.Forms.Padding(6, 6, 6, 6);
+            this.labelStatus.Location = new System.Drawing.Point(211, 337);
+            this.labelStatus.Margin = new System.Windows.Forms.Padding(6);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(70, 19);
             this.labelStatus.TabIndex = 7;
@@ -68,8 +68,8 @@ namespace BaoCao_MonHoc
             // peImage
             // 
             this.peImage.EditValue = global::BaoCao_MonHoc.Properties.Resources._1632686718_478_Anh_dong_cute_dep;
-            this.peImage.Location = new System.Drawing.Point(18, 18);
-            this.peImage.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.peImage.Location = new System.Drawing.Point(209, 37);
+            this.peImage.Margin = new System.Windows.Forms.Padding(4);
             this.peImage.Name = "peImage";
             this.peImage.Properties.AllowFocused = false;
             this.peImage.Properties.Appearance.BackColor = System.Drawing.Color.Transparent;
@@ -84,7 +84,7 @@ namespace BaoCao_MonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(675, 492);
+            this.ClientSize = new System.Drawing.Size(1065, 745);
             this.Controls.Add(this.peImage);
             this.Controls.Add(this.labelStatus);
             this.Controls.Add(this.labelCopyright);

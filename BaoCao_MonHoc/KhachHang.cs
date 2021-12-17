@@ -15,7 +15,7 @@ namespace BaoCao_MonHoc
         public KhachHang()
         {
             InitializeComponent();
-            CenterToScreen();
+           
             loadData();
             combo1();
         }
@@ -166,10 +166,117 @@ namespace BaoCao_MonHoc
                 return false;
             }
         }
+        private bool savekh()
+        {
+            String _makh = "";
+            String _tenkh = "";
+            String _gioitinh = "";
+            DateTime _ngaysinh;
+            string _diachi = "";
+            String _sdt = "";
+            String _cccd = "";
+            if (textEdit2.EditValue != null)
+            {
+                _makh = textEdit2.EditValue.ToString();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+                textEdit2.Focus();
+            }
+            if (textEdit4.EditValue != null)
+            {
+                _tenkh = textEdit4.EditValue.ToString();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+                textEdit4.Focus();
+            }
+            if (comboBoxEdit1.EditValue != null)
+            {
+                _gioitinh = comboBoxEdit1.EditValue.ToString();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+                comboBoxEdit1.Focus();
+            }
+          
+            if (dateEdit2.EditValue != null)
+            {
+                _ngaysinh = dateEdit2.DateTime.Date;
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+                dateEdit2.Focus();
+            }
+           
+            if (textEdit5.EditValue != null)
+            {
+                _diachi = textEdit5.EditValue.ToString();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+                textEdit5.Focus();
+            }
+            if (textEdit6.EditValue != null)
+            {
+                _sdt = textEdit6.EditValue.ToString();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+                textEdit6.Focus();
+            }
+            if (textEdit7.EditValue != null)
+            {
+                _cccd = textEdit7.EditValue.ToString();
+            }
+            else
+            {
+                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                return false;
+                textEdit7.Focus();
+            }
+            try
+            {
+                DataQLDTDataContext db = new DataQLDTDataContext();
+                khachhang _KH = null;
+                _KH = new khachhang();
+                _KH.makh = _makh;
+                _KH.hoten = _tenkh;  
+                _KH.gioitinh = _gioitinh;
+               
+                _KH.ngaysinh = _ngaysinh;
+                _KH.diachi = _diachi;
+                _KH.sodt = _sdt;
+                _KH.cccd = _cccd;
+          
+                db.khachhangs.InsertOnSubmit(_KH);
+                db.SubmitChanges();
+                loadData();
+                XtraMessageBox.Show("Đã thêm thành công nhân viên" + _makh, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return true;
+            }
+            catch (Exception)
+            {
+                return false;
+            }
+        }
 
         private void simpleButton3_Click(object sender, EventArgs e)
         {
-            DataQLDTDataContext db = new DataQLDTDataContext();
+            savekh();
+            /*DataQLDTDataContext db = new DataQLDTDataContext();
 
             kh.makh = textEdit2.Text;
             kh.hoten = textEdit4.Text;
@@ -182,7 +289,7 @@ namespace BaoCao_MonHoc
             db.SubmitChanges();
             XtraMessageBox.Show("Đã thêm thành công", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
 
-            loadData();
+            loadData();*/
 
         }
 

@@ -17,6 +17,7 @@ namespace BaoCao_MonHoc
         public Form1()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
 

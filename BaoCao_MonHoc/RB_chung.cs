@@ -15,6 +15,7 @@ namespace BaoCao_MonHoc
         public RB_chung()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void simpleButton1_Click(object sender, EventArgs e)

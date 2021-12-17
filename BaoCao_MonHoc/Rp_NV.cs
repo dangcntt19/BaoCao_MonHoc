@@ -15,6 +15,7 @@ namespace BaoCao_MonHoc
         public Rp_NV()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void Rp_NV_Load(object sender, EventArgs e)

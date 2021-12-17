@@ -15,6 +15,7 @@ namespace BaoCao_MonHoc
         public Rp_KH()
         {
             InitializeComponent();
+            CenterToScreen();
         }
 
         private void Rp_KH_Load(object sender, EventArgs e)

@@ -16,6 +16,7 @@ namespace BaoCao_MonHoc
         public Quanli()
         {
             InitializeComponent();
+            CenterToScreen();
         }
         private Form KiemTraForm (Type fType)
         {
@@ -73,24 +74,27 @@ namespace BaoCao_MonHoc
 
         private void barButtonItem17_ItemClick(object sender, ItemClickEventArgs e)
         {
-            Form frm = this.KiemTraForm(typeof(XuatEX));
-            if (frm != null)
-            {
-                frm.Activate();
-            }
-            else
-            {
+            
                 XuatEX f = new XuatEX();
-                f.MdiParent = this;
+                
                 f.Show();
-            }
+            
         }
 
         private void btndangxuat_ItemClick(object sender, ItemClickEventArgs e)
         {
+            this.Hide();
             DangNhap r = new DangNhap();
             r.ShowDialog();
-            this.Hide();
+        
+        }
+
+        private void barButtonItem18_ItemClick(object sender, ItemClickEventArgs e)
+        {
+            DialogResult kq = MessageBox.Show("BẠN MUỐN THOÁT RA?", "Thông báo", MessageBoxButtons.OKCancel, MessageBoxIcon.Information);
+            if (kq == DialogResult.OK)
+              
+            Application.Exit();
         }
     }
 }

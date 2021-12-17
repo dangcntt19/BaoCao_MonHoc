@@ -16,7 +16,8 @@ namespace BaoCao_MonHoc
         public DangNhap()
         {
            CenterToScreen();
-            InitializeComponent();
+            //CenterToParent();
+           InitializeComponent();
         }
 
       
@@ -47,11 +48,6 @@ namespace BaoCao_MonHoc
             }catch(Exception ex)
             { MessageBox.Show("lỗi kết nối");
             }
-         }
-
-        private void DangNhap_Load(object sender, EventArgs e)
-        {
-          
-        }
+         }    
     }
 }

@@ -17,6 +17,7 @@ namespace BaoCao_MonHoc
         public Form2()
         {
             InitializeComponent();
+            CenterToScreen();
         }
         DataSet Data = new DataSet();
       

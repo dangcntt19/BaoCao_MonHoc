@@ -64,7 +64,6 @@ namespace BaoCao_MonHoc
             this.simpleButton1 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton2 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton3 = new DevExpress.XtraEditors.SimpleButton();
-            this.searchControl1 = new DevExpress.XtraEditors.SearchControl();
             this.simpleButton4 = new DevExpress.XtraEditors.SimpleButton();
             this.simpleButton5 = new DevExpress.XtraEditors.SimpleButton();
             ((System.ComponentModel.ISupportInitialize)(this.pictureEdit1.Properties)).BeginInit();
@@ -94,7 +93,6 @@ namespace BaoCao_MonHoc
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).BeginInit();
             this.SuspendLayout();
             // 
             // pictureEdit1
@@ -111,11 +109,11 @@ namespace BaoCao_MonHoc
             // 
             this.gridControl1.Dock = System.Windows.Forms.DockStyle.Bottom;
             this.gridControl1.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
-            this.gridControl1.Location = new System.Drawing.Point(0, 465);
+            this.gridControl1.Location = new System.Drawing.Point(0, 701);
             this.gridControl1.MainView = this.gridView1;
             this.gridControl1.Margin = new System.Windows.Forms.Padding(4);
             this.gridControl1.Name = "gridControl1";
-            this.gridControl1.Size = new System.Drawing.Size(1113, 315);
+            this.gridControl1.Size = new System.Drawing.Size(1141, 170);
             this.gridControl1.TabIndex = 1;
             this.gridControl1.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
             this.gridView1});
@@ -447,21 +445,6 @@ namespace BaoCao_MonHoc
             this.simpleButton3.Text = "Thêm";
             this.simpleButton3.Click += new System.EventHandler(this.simpleButton3_Click);
             // 
-            // searchControl1
-            // 
-            this.searchControl1.Client = this.gridControl1;
-            this.searchControl1.Location = new System.Drawing.Point(694, 393);
-            this.searchControl1.Margin = new System.Windows.Forms.Padding(4);
-            this.searchControl1.Name = "searchControl1";
-            this.searchControl1.Properties.AutoHeight = false;
-            this.searchControl1.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
-            new DevExpress.XtraEditors.Repository.ClearButton(),
-            new DevExpress.XtraEditors.Repository.SearchButton()});
-            this.searchControl1.Properties.Client = this.gridControl1;
-            this.searchControl1.Properties.ShowDefaultButtonsMode = DevExpress.XtraEditors.Repository.ShowDefaultButtonsMode.AutoShowClear;
-            this.searchControl1.Size = new System.Drawing.Size(419, 49);
-            this.searchControl1.TabIndex = 7;
-            // 
             // simpleButton4
             // 
             this.simpleButton4.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton4.ImageOptions.Image")));
@@ -486,10 +469,9 @@ namespace BaoCao_MonHoc
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1113, 780);
+            this.ClientSize = new System.Drawing.Size(1141, 871);
             this.Controls.Add(this.simpleButton5);
             this.Controls.Add(this.simpleButton4);
-            this.Controls.Add(this.searchControl1);
             this.Controls.Add(this.simpleButton3);
             this.Controls.Add(this.simpleButton2);
             this.Controls.Add(this.simpleButton1);
@@ -525,7 +507,6 @@ namespace BaoCao_MonHoc
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem5)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem6)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layoutControlItem7)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.searchControl1.Properties)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -559,7 +540,6 @@ namespace BaoCao_MonHoc
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem5;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem6;
         private DevExpress.XtraLayout.LayoutControlItem layoutControlItem7;
-        private DevExpress.XtraEditors.SearchControl searchControl1;
         private DevExpress.XtraEditors.SimpleButton simpleButton4;
         private DevExpress.XtraEditors.SimpleButton simpleButton5;
         private DevExpress.XtraGrid.Columns.GridColumn gridColumn1;

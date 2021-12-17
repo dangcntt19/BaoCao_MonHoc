@@ -16,11 +16,7 @@ namespace BaoCao_MonHoc
         public DN()
         {
             InitializeComponent();
-        }
-
-        private void simpleButton1_Click(object sender, EventArgs e)
-        {
-            
+            CenterToParent();
         }
 
         private void DN_Load(object sender, EventArgs e)
