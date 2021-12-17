@@ -64,108 +64,7 @@ namespace BaoCao_MonHoc
                 }
             }
         }
-        private bool save()
-        {
-            String _makh = "";
-            String _tenkh = "";
-            String _gioitinh = "";
-            DateTime _ngaysinh;
-            String _diachi = "";
-            String _sdt = "";
-            String _cccd = "";
-            if (textEdit2.EditValue != null)
-            {
-                _makh = textEdit2.EditValue.ToString();
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-                textEdit2.Focus();
-            }
-            if (textEdit4.EditValue != null)
-            {
-                _tenkh = textEdit4.EditValue.ToString();
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-                textEdit4.Focus();
-            }
-            if (comboBoxEdit1.EditValue != null)
-            {
-                _gioitinh = comboBoxEdit1.EditValue.ToString();
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-                comboBoxEdit1.Focus();
-            }
-            if (dateEdit2.EditValue != null)
-            {
-                _ngaysinh = dateEdit2.DateTime.Date;
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-                dateEdit2.Focus();
-            }
-            if (textEdit5.EditValue != null)
-            {
-                _diachi = textEdit5.EditValue.ToString();
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-                textEdit5.Focus();
-            }
-            if (textEdit6.EditValue != null)
-            {
-                _sdt = textEdit6.EditValue.ToString();
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-                textEdit6.Focus();
-            }
-            if (textEdit7.EditValue != null)
-            {
-                _cccd = textEdit7.EditValue.ToString();
-            }
-            else
-            {
-                XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
-                return false;
-                textEdit7.Focus();
-            }
-
-            try
-            {
-                DataQLDTDataContext db = new DataQLDTDataContext();
-                khachhang _khachhang = null;
-                _khachhang = new khachhang();
-                _khachhang.makh = _makh;
-                _khachhang.hoten = _tenkh;
-                _khachhang.gioitinh = _gioitinh;
-                _khachhang.ngaysinh = _ngaysinh;
-                _khachhang.sodt = _sdt;
-                _khachhang.cccd = _cccd;
-
-                db.khachhangs.InsertOnSubmit(_khachhang);
-                db.SubmitChanges();
-                XtraMessageBox.Show("Đã thêm thành công Khách hàng" + _makh, "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                return true;
-            }
-            catch (Exception)
-            {
-                return false;
-            }
-        }
+      
         private bool savekh()
         {
             String _makh = "";
@@ -175,15 +74,15 @@ namespace BaoCao_MonHoc
             string _diachi = "";
             String _sdt = "";
             String _cccd = "";
-            if (textEdit2.EditValue != null)
+            if (textEdit1.EditValue != null)
             {
-                _makh = textEdit2.EditValue.ToString();
+                _makh = textEdit1.EditValue.ToString();
             }
             else
             {
                 XtraMessageBox.Show("Bạn chưa nhập thông tin", "Cảnh báo", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 return false;
-                textEdit2.Focus();
+                textEdit1.Focus();
             }
             if (textEdit4.EditValue != null)
             {
@@ -297,8 +196,8 @@ namespace BaoCao_MonHoc
         {
             DataQLDTDataContext db = new DataQLDTDataContext();
 
-            kh = db.khachhangs.Where(s => s.makh == textEdit2.Text).Single();
-            kh.makh = textEdit2.Text;
+            kh = db.khachhangs.Where(s => s.makh == textEdit1.Text).Single();
+            kh.makh = textEdit1.Text;
             kh.hoten = textEdit4.Text;
             kh.gioitinh = comboBoxEdit1.Text;
             kh.ngaysinh = dateEdit2.DateTime.Date;
@@ -312,7 +211,7 @@ namespace BaoCao_MonHoc
 
         private void gridView1_RowCellClick(object sender, DevExpress.XtraGrid.Views.Grid.RowCellClickEventArgs e)
         {
-            textEdit2.Text = gridView1.GetFocusedRowCellValue("makh").ToString();
+            textEdit1.Text = gridView1.GetFocusedRowCellValue("makh").ToString();
             textEdit4.Text = gridView1.GetFocusedRowCellValue("hoten").ToString();
             comboBoxEdit1.Text = gridView1.GetFocusedRowCellValue("gioitinh").ToString();
             dateEdit2.Text = gridView1.GetFocusedRowCellValue("ngaysinh").ToString();

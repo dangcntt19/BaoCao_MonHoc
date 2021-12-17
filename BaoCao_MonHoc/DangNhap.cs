@@ -48,6 +48,8 @@ namespace BaoCao_MonHoc
             }catch(Exception ex)
             { MessageBox.Show("lỗi kết nối");
             }
-         }    
+         }
+
+        
     }
 }

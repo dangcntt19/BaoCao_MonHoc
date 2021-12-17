@@ -40,7 +40,7 @@ namespace BaoCao_MonHoc
             // progressBarControl
             // 
             this.progressBarControl.EditValue = 0;
-            this.progressBarControl.Location = new System.Drawing.Point(211, 393);
+            this.progressBarControl.Location = new System.Drawing.Point(211, 585);
             this.progressBarControl.Margin = new System.Windows.Forms.Padding(4);
             this.progressBarControl.Name = "progressBarControl";
             this.progressBarControl.Size = new System.Drawing.Size(606, 18);
@@ -49,7 +49,7 @@ namespace BaoCao_MonHoc
             // labelCopyright
             // 
             this.labelCopyright.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
-            this.labelCopyright.Location = new System.Drawing.Point(414, 491);
+            this.labelCopyright.Location = new System.Drawing.Point(414, 683);
             this.labelCopyright.Margin = new System.Windows.Forms.Padding(6);
             this.labelCopyright.Name = "labelCopyright";
             this.labelCopyright.Size = new System.Drawing.Size(69, 19);
@@ -58,7 +58,7 @@ namespace BaoCao_MonHoc
             // 
             // labelStatus
             // 
-            this.labelStatus.Location = new System.Drawing.Point(211, 337);
+            this.labelStatus.Location = new System.Drawing.Point(211, 529);
             this.labelStatus.Margin = new System.Windows.Forms.Padding(6);
             this.labelStatus.Name = "labelStatus";
             this.labelStatus.Size = new System.Drawing.Size(70, 19);
@@ -68,7 +68,7 @@ namespace BaoCao_MonHoc
             // peImage
             // 
             this.peImage.EditValue = global::BaoCao_MonHoc.Properties.Resources._1632686718_478_Anh_dong_cute_dep;
-            this.peImage.Location = new System.Drawing.Point(209, 37);
+            this.peImage.Location = new System.Drawing.Point(209, 13);
             this.peImage.Margin = new System.Windows.Forms.Padding(4);
             this.peImage.Name = "peImage";
             this.peImage.Properties.AllowFocused = false;
@@ -76,8 +76,7 @@ namespace BaoCao_MonHoc
             this.peImage.Properties.Appearance.Options.UseBackColor = true;
             this.peImage.Properties.BorderStyle = DevExpress.XtraEditors.Controls.BorderStyles.NoBorder;
             this.peImage.Properties.ShowMenu = false;
-            this.peImage.Properties.SizeMode = DevExpress.XtraEditors.Controls.PictureSizeMode.Squeeze;
-            this.peImage.Size = new System.Drawing.Size(639, 270);
+            this.peImage.Size = new System.Drawing.Size(639, 483);
             this.peImage.TabIndex = 9;
             // 
             // SplashScreen1
